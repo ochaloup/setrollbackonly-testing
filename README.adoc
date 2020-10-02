@@ -1,0 +1,4 @@
+* build `mvn clean test -DskipTests`
+* deploy to WildFly `cp target/jboss.eap-1.0-SNAPSHOT.war $JBOSS_HOME/standalone/deployments`
+* run the WildFly `cd $JBOSS_HOME; ./bin/standalone.sh`
+* run the test execution here to invoke EJB `mvn test`
