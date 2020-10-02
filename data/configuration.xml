@@ -1,0 +1,28 @@
+<!-- under datasources for standalone/configuration/standalone.xml -->
+
+                <xa-datasource jndi-name="java:jboss/datasources/ExampleXADS" pool-name="ExampleXADS">
+                   <driver>h2</driver>
+                   <xa-datasource-property name="URL">jdbc:h2:mem:test</xa-datasource-property>
+                   <xa-pool>
+                        <min-pool-size>10</min-pool-size>
+                        <max-pool-size>20</max-pool-size>
+                        <prefill>true</prefill>
+                   </xa-pool>
+                   <security>
+                        <user-name>sa</user-name>
+                        <password>sa</password>
+                   </security>
+                </xa-datasource>
+                <xa-datasource jndi-name="java:jboss/datasources/ExampleXADS2" pool-name="ExampleXADS2">
+                   <driver>h2</driver>
+                   <xa-datasource-property name="URL">jdbc:h2:mem:test</xa-datasource-property>
+                   <xa-pool>
+                        <min-pool-size>10</min-pool-size>
+                        <max-pool-size>20</max-pool-size>
+                        <prefill>true</prefill>
+                   </xa-pool>
+                   <security>
+                        <user-name>sa</user-name>
+                        <password>sa</password>
+                   </security>
+                </xa-datasource>

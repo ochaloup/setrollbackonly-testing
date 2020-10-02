@@ -21,4 +21,7 @@
       http://xmlns.jcp.org/xml/ns/javaee
       http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
     bean-discovery-mode="all">
+    <interceptors>
+        <!-- <class>support.jboss.ejb.session.interceptor.CDIInterceptor</class> -->
+    </interceptors>
 </beans>
